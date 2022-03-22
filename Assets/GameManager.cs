@@ -9,6 +9,13 @@ public class GameManager : MonoBehaviour
 
     private int countNumber = 0;
 
+    private void Update() {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
+    
     public void Count()
     {
         countNumber++;
